@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { GoogleGenerativeAI, HarmBlockThreshold, HarmCategory } from "@google/generative-ai";
 
 
-const apiKey = process.env.GEMINI_KEY as string??'AIzaSyDKOLzLxug1sKepgx2J5Pa1ObWPB7c8ulo';
+const apiKey = process.env.GEMINI_KEY as string;
 const genAI = new GoogleGenerativeAI(apiKey);
 
 // Banned keywords for moderation
